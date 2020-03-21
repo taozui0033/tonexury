@@ -1,5 +1,5 @@
 function _getNumber {
-	local number=$(ls -l | wc -l)
+	local number=$(ls | wc -l)
 	echo $number
 }
 
