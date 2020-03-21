@@ -12,17 +12,17 @@ do
 
 read fileno
 
-while [[ $fileno == *[!0-9]* ]];
+while [[ ${fileno#0} == *[!0-9]* ]];
 do
 	echo "Please enter a number:"
 	read fileno
 done
 
-if [[ $(_getNumber) -eq  $fileno ]]
+if [[ $(_getNumber) -eq  ${fileno#0} ]]
 then
 	echo "Congrats! You are right, it is $fileno"
 	let r=1
-elif [[ $(_getNumber) -gt  $fileno ]]
+elif [[ $(_getNumber) -gt ${fileno#0} ]]
  then
 	echo "It is too low.Please enter it again:"
  else
