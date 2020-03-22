@@ -11,7 +11,8 @@ while [[ $r -eq 0 ]]
 do
 
 read fileno
-#let fileno=$fileno | sed -r 's/0*([0-9])/\1/'
+let fileno=$(echo $fileno | sed -r 's/0*([0-9])/\1/')
+#echo $fileno
 
 while [[ $fileno == *[!0-9]* ]];
 do
