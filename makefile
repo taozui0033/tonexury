@@ -1,4 +1,4 @@
-.PHONY: README.md
+app.PHONY: README.md
 
 all: README.md
 
