@@ -13,7 +13,7 @@ do
 read fileno
 #let fileno=$fileno | sed -r 's/0*([0-9])/\1/'
 
-while [[ $((10#$fileno)) == *[!0-9]* ]];
+while [[ $fileno == *[!0-9]* ]];
 do
 	echo "Please enter a number:"
 	read fileno
