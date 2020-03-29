@@ -1,0 +1,7 @@
+AAAAA
+BBBB
+<<<<<<< HEAD
+CCCC
+DDDDD
+=======
+>>>>>>> Feature2
